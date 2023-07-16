@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+
 int isKeyword(char buffer[])
 {
     char keywords[32][10] = {"auto", "break", "case", "char", "const", "continue", "default",
@@ -20,6 +21,7 @@ int isKeyword(char buffer[])
     }
     return flag;
 }
+
 int main()
 {
     char ch, buffer[15], operators[] = "+-*/%=";
